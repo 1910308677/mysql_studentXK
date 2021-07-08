@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <!--配置UserServlet -->
+    <servlet>
+        <servlet-name>userController</servlet-name>
+        <servlet-class>com.lps.controller.UserController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>userController</servlet-name>
+        <url-pattern>/userController.do</url-pattern>
+    </servlet-mapping>
+
+    <!--配置UserServlet -->
+    <servlet>
+        <servlet-name>loginController</servlet-name>
+        <servlet-class>com.lps.controller.LoginController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginController</servlet-name>
+        <url-pattern>/loginController.do</url-pattern>
+    </servlet-mapping>
+
+    <!--配置UserServlet -->
+    <servlet>
+        <servlet-name>roleController</servlet-name>
+        <servlet-class>com.lps.controller.RoleController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>roleController</servlet-name>
+        <url-pattern>/roleController.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>permissionController</servlet-name>
+        <servlet-class>com.lps.controller.PermissionController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>permissionController</servlet-name>
+        <url-pattern>/permissionController.do</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>courseController</servlet-name>
+        <servlet-class>com.lps.controller.XkController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>courseController</servlet-name>
+        <url-pattern>/courseController.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>countController</servlet-name>
+        <servlet-class>com.lps.controller.CountController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>countController</servlet-name>
+        <url-pattern>/countController.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>selectionController</servlet-name>
+        <servlet-class>com.lps.controller.SelectionController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>selectionController</servlet-name>
+        <url-pattern>/selectionController.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>tableController</servlet-name>
+        <servlet-class>com.lps.controller.TableController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>tableController</servlet-name>
+        <url-pattern>/tableController.do</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>selectController</servlet-name>
+        <servlet-class>com.lps.controller.SelectController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>selectController</servlet-name>
+        <url-pattern>/selectController.do</url-pattern>
+    </servlet-mapping>
+
+    <!--欢迎页面 -->
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
